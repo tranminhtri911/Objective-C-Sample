@@ -29,6 +29,7 @@
     self.isMoved = NO;
     self.originFrame = self.image.frame;
 
+    [self.navigationController setNavigationBarHidden:NO];
     self.title = @"Movie Detail";
     
     _labelTitle.text = _movie.title;

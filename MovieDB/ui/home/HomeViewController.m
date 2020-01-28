@@ -59,7 +59,9 @@ static NSString * const reuseIdentifier = @"MovieCollectionViewCell";
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     CGFloat width = (collectionView.frame.size.width - 40)  / 3;
-    return CGSizeMake(width, 175);
+    CGFloat navHeight = self.navigationController.navigationBar.frame.size.height;
+    CGFloat height = (collectionView.frame.size.height - 40 - navHeight)  / 3;
+    return CGSizeMake(width, height);
 }
 
 
