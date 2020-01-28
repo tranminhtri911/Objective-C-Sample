@@ -24,9 +24,6 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Dq-tz-TWH">
                                 <rect key="frame" x="0.0" y="0.0" width="151" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="pjM-Px-ab4"/>
-                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I59-WZ-0yV">
                                 <rect key="frame" x="0.0" y="150" width="151" height="25"/>
@@ -41,11 +38,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="7Dq-tz-TWH" firstAttribute="leading" secondItem="aLd-lk-qFj" secondAttribute="leading" id="0G7-Us-N9h"/>
+                            <constraint firstItem="I59-WZ-0yV" firstAttribute="top" secondItem="7Dq-tz-TWH" secondAttribute="bottom" id="AZ7-c0-cH9"/>
                             <constraint firstAttribute="trailing" secondItem="7Dq-tz-TWH" secondAttribute="trailing" id="ViV-J6-GuO"/>
                             <constraint firstItem="7Dq-tz-TWH" firstAttribute="top" secondItem="aLd-lk-qFj" secondAttribute="top" id="chE-cG-Z7Y"/>
                             <constraint firstAttribute="trailing" secondItem="I59-WZ-0yV" secondAttribute="trailing" id="dVQ-OR-dEA"/>
                             <constraint firstItem="I59-WZ-0yV" firstAttribute="leading" secondItem="aLd-lk-qFj" secondAttribute="leading" id="joS-YF-s7L"/>
-                            <constraint firstItem="I59-WZ-0yV" firstAttribute="top" secondItem="7Dq-tz-TWH" secondAttribute="bottom" id="s9g-tf-7op"/>
+                            <constraint firstAttribute="bottom" secondItem="I59-WZ-0yV" secondAttribute="bottom" id="mYF-uy-enS"/>
                         </constraints>
                     </view>
                 </subviews>
