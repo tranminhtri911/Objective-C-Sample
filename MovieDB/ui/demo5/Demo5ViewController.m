@@ -92,7 +92,7 @@ static NSString * const reuseIdentifier = @"Demo5CollectionViewCell";
         height = collectionView.bounds.size.height;
     }else {
         int row = 3;
-        CGFloat totalSpacing = _spacing * (row + 1);
+        CGFloat totalSpacing =  [self canculatorSpacing] * (row + 1);
         width = (collectionView.bounds.size.width - totalSpacing)  / row;
         height = (collectionView.bounds.size.height - totalSpacing)  / row;
     }
@@ -103,7 +103,7 @@ static NSString * const reuseIdentifier = @"Demo5CollectionViewCell";
     if (collectionView == _horizontalCollectionVIew) {
         return UIEdgeInsetsMake(0, 0, 0, 0);
     }
-    CGFloat spacing = _spacing;
+    CGFloat spacing =  [self canculatorSpacing];
     return UIEdgeInsetsMake(spacing, spacing, spacing, spacing);
 }
 
@@ -111,14 +111,14 @@ static NSString * const reuseIdentifier = @"Demo5CollectionViewCell";
     if (collectionView == self.horizontalCollectionVIew) {
         return 0;
     }
-    return self.spacing;
+    return  [self canculatorSpacing];
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
     if (collectionView == self.horizontalCollectionVIew) {
         return 0;
     }
-    return self.spacing / 2;
+    return [self canculatorSpacing] / 2;
 }
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -129,6 +129,7 @@ static NSString * const reuseIdentifier = @"Demo5CollectionViewCell";
     CGFloat spacing;
     CGFloat heightUIScreen = [UIScreen mainScreen].bounds.size.height;
     CGFloat widthMainScreen = [UIScreen mainScreen].bounds.size.width;
+    // Portrait
     if (heightUIScreen > widthMainScreen) {
         spacing = widthMainScreen / 9;
     } else {
