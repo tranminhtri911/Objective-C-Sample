@@ -122,8 +122,7 @@ static NSString * const reuseIdentifier = @"Demo5CollectionViewCell";
 }
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    Demo4ViewController *vc = [Demo4ViewController create];
-    [self.navigationController pushViewController:vc animated:true];
+    [self pushToDemo4VC];
 }
 
 - (CGFloat)canculatorSpacing {
@@ -136,6 +135,15 @@ static NSString * const reuseIdentifier = @"Demo5CollectionViewCell";
         spacing = self.verticalCollectionView.bounds.size.height / 9;
     }
     return spacing;
+}
+
+- (IBAction)onTapDemo4:(id)sender {
+    [self pushToDemo4VC];
+}
+
+- (void) pushToDemo4VC {
+    Demo4ViewController *vc = [Demo4ViewController create];
+    [self.navigationController pushViewController:vc animated:true];
 }
 
 @end
