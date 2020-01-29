@@ -1,8 +1,8 @@
 //
-//  Demo5CollectionViewCell.h
+//  Demo4TableViewCell.h
 //  MovieDB
 //
-//  Created by tri on 1/27/20.
+//  Created by tri on 1/28/20.
 //  Copyright © 2020 Tri. All rights reserved.
 //
 
@@ -10,13 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Demo5CollectionViewCell : UICollectionViewCell
+@interface Demo4TableViewCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
 - (void)bindData:(NSString *)text;
-
-- (void)setContentSize:(CGSize *)size;
 
 @end
 

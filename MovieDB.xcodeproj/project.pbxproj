@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		10FDDF1B62F2C4A014E4F2BD /* Pods_MovieDB_MovieDBUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA69F8B9867E8619A322954 /* Pods_MovieDB_MovieDBUITests.framework */; };
+		1108D14A23E12A7B00A5B945 /* Demo4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1108D14823E12A7B00A5B945 /* Demo4ViewController.m */; };
+		1108D14B23E12A7B00A5B945 /* Demo4ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1108D14923E12A7B00A5B945 /* Demo4ViewController.xib */; };
+		1108D15023E14E8400A5B945 /* Demo4TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1108D14E23E14E8400A5B945 /* Demo4TableViewCell.m */; };
+		1108D15123E14E8400A5B945 /* Demo4TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1108D14F23E14E8400A5B945 /* Demo4TableViewCell.xib */; };
+		1108D15523E1543800A5B945 /* ViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1108D15423E1543800A5B945 /* ViewUtils.m */; };
 		110D5E6723DFB9CD00C251BC /* FavoriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 110D5E6623DFB9CD00C251BC /* FavoriteViewController.m */; };
 		110D5E6C23DFBDF000C251BC /* MovieTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 110D5E6A23DFBDF000C251BC /* MovieTableViewCell.m */; };
 		110D5E6D23DFBDF000C251BC /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110D5E6B23DFBDF000C251BC /* MovieTableViewCell.xib */; };
@@ -49,6 +54,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1108D14723E12A7B00A5B945 /* Demo4ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo4ViewController.h; sourceTree = "<group>"; };
+		1108D14823E12A7B00A5B945 /* Demo4ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo4ViewController.m; sourceTree = "<group>"; };
+		1108D14923E12A7B00A5B945 /* Demo4ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Demo4ViewController.xib; sourceTree = "<group>"; };
+		1108D14D23E14E8400A5B945 /* Demo4TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo4TableViewCell.h; sourceTree = "<group>"; };
+		1108D14E23E14E8400A5B945 /* Demo4TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo4TableViewCell.m; sourceTree = "<group>"; };
+		1108D14F23E14E8400A5B945 /* Demo4TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Demo4TableViewCell.xib; sourceTree = "<group>"; };
+		1108D15323E1543800A5B945 /* ViewUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewUtils.h; sourceTree = "<group>"; };
+		1108D15423E1543800A5B945 /* ViewUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewUtils.m; sourceTree = "<group>"; };
 		110D5E6523DFB9CD00C251BC /* FavoriteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavoriteViewController.h; sourceTree = "<group>"; };
 		110D5E6623DFB9CD00C251BC /* FavoriteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavoriteViewController.m; sourceTree = "<group>"; };
 		110D5E6923DFBDF000C251BC /* MovieTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieTableViewCell.h; sourceTree = "<group>"; };
@@ -123,6 +136,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1108D14623E12A5800A5B945 /* demo4 */ = {
+			isa = PBXGroup;
+			children = (
+				1108D14C23E14E6B00A5B945 /* cell */,
+				1108D14723E12A7B00A5B945 /* Demo4ViewController.h */,
+				1108D14823E12A7B00A5B945 /* Demo4ViewController.m */,
+				1108D14923E12A7B00A5B945 /* Demo4ViewController.xib */,
+			);
+			path = demo4;
+			sourceTree = "<group>";
+		};
+		1108D14C23E14E6B00A5B945 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				1108D14D23E14E8400A5B945 /* Demo4TableViewCell.h */,
+				1108D14E23E14E8400A5B945 /* Demo4TableViewCell.m */,
+				1108D14F23E14E8400A5B945 /* Demo4TableViewCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		1108D15223E1541700A5B945 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				1108D15323E1543800A5B945 /* ViewUtils.h */,
+				1108D15423E1543800A5B945 /* ViewUtils.m */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
 		110D5E6423DFB9AB00C251BC /* favorite */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +241,7 @@
 		11D689D023D932E900699F74 /* MovieDB */ = {
 			isa = PBXGroup;
 			children = (
+				1108D15223E1541700A5B945 /* utils */,
 				11FC1C5123DE67CA0026FC9B /* model */,
 				11FC1C5423DE67CA0026FC9B /* ui */,
 				11D689D123D932E900699F74 /* AppDelegate.h */,
@@ -239,6 +283,7 @@
 		11FC1C5423DE67CA0026FC9B /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				1108D14623E12A5800A5B945 /* demo4 */,
 				110D5E6E23DFF1D200C251BC /* demo5 */,
 				110D5E6423DFB9AB00C251BC /* favorite */,
 				118AFBF123DE899700F0BFC9 /* movieDetail */,
@@ -412,6 +457,8 @@
 				118AFBF623DE89AE00F0BFC9 /* MovieDetailViewController.xib in Resources */,
 				110D5E7823E00A7600C251BC /* Demo5CollectionViewCell.xib in Resources */,
 				110D5E6D23DFBDF000C251BC /* MovieTableViewCell.xib in Resources */,
+				1108D15123E14E8400A5B945 /* Demo4TableViewCell.xib in Resources */,
+				1108D14B23E12A7B00A5B945 /* Demo4ViewController.xib in Resources */,
 				11FC1C7123DE696E0026FC9B /* Main.storyboard in Resources */,
 				11D689DB23D932EB00699F74 /* Assets.xcassets in Resources */,
 				11FC1C6523DE67CA0026FC9B /* MovieCollectionViewCell.xib in Resources */,
@@ -550,9 +597,12 @@
 				11FC1C6623DE67CA0026FC9B /* MovieCollectionViewCell.m in Sources */,
 				110D5E6C23DFBDF000C251BC /* MovieTableViewCell.m in Sources */,
 				11D689E123D932EB00699F74 /* main.m in Sources */,
+				1108D14A23E12A7B00A5B945 /* Demo4ViewController.m in Sources */,
 				11D689D323D932E900699F74 /* AppDelegate.m in Sources */,
+				1108D15523E1543800A5B945 /* ViewUtils.m in Sources */,
 				11FC1C6723DE67CA0026FC9B /* MainController.m in Sources */,
 				11FC1C7723DE69D50026FC9B /* HomeViewController.m in Sources */,
+				1108D15023E14E8400A5B945 /* Demo4TableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

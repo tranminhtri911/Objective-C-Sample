@@ -10,13 +10,18 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Demo5ViewController : UIViewController<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@interface Demo5ViewController : UIViewController<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout> {
+    NSMutableArray *data;
+    CGFloat spacing;
+}
 
 @property (weak, nonatomic) IBOutlet UICollectionView *horizontalCollectionVIew;
 
 @property (weak, nonatomic) IBOutlet UICollectionView *verticalCollectionView;
 
 @property (strong, nonatomic) NSMutableArray *data;
+
+@property (nonatomic) CGFloat spacing;
 
 @end
 

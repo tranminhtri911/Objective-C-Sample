@@ -16,13 +16,14 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UIImageView *image;
 
 @property (weak, nonatomic) IBOutlet UILabel *labelTitle;
-@property (weak, nonatomic) Movie *movie;
 @property (weak, nonatomic) IBOutlet UILabel *rating;
 @property (weak, nonatomic) IBOutlet UILabel *date;
 @property (weak, nonatomic) IBOutlet UILabel *overview;
 
 @property (nonatomic) BOOL isMoved;
 @property (nonatomic) CGRect originFrame;
+
+@property (strong, nonatomic) Movie *movie;
 
 +(MovieDetailViewController *)create:(Movie *)movie;
 
