@@ -1,5 +1,5 @@
 //
-//  Demo4ViewController.h
+//  Demo4ScrollViewController.h
 //  MovieDB
 //
 //  Created by tri on 1/28/20.
@@ -8,10 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Demo4ViewController : UIViewController<UITableViewDelegate, UITableViewDataSource> {
+@interface Demo4ScrollViewController : UIViewController<UITableViewDelegate, UITableViewDataSource> {
     NSMutableArray *data;
 }
 
@@ -23,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (strong, nonatomic) NSMutableArray* data;
 
-+(Demo4ViewController* )create;
++(Demo4ScrollViewController* )create;
 
 @end
 

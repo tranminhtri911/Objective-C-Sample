@@ -237,7 +237,22 @@
                             </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pue-fV-jPm">
                                 <rect key="frame" x="192" y="845.5" width="384" height="108.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1c-5l-vNh">
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="108.5"/>
+                                        <state key="normal" title="Demo 4"/>
+                                        <connections>
+                                            <action selector="onTapDemo4:" destination="mcy-2H-xCC" eventType="touchUpInside" id="rZP-88-R30"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="M1c-5l-vNh" firstAttribute="leading" secondItem="Pue-fV-jPm" secondAttribute="leading" id="Rkl-cN-217"/>
+                                    <constraint firstAttribute="bottom" secondItem="M1c-5l-vNh" secondAttribute="bottom" id="V1V-Dr-NMz"/>
+                                    <constraint firstAttribute="trailing" secondItem="M1c-5l-vNh" secondAttribute="trailing" id="mQJ-Fk-53X"/>
+                                    <constraint firstItem="M1c-5l-vNh" firstAttribute="top" secondItem="Pue-fV-jPm" secondAttribute="top" id="qei-AI-xZx"/>
+                                </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5JL-xA-HcU">
                                 <rect key="frame" x="0.0" y="214.5" width="768" height="631"/>
