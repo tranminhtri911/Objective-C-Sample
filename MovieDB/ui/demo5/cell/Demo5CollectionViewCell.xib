@@ -60,8 +60,7 @@
             <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
             <size key="customSize" width="288" height="210"/>
             <connections>
-                <outlet property="label" destination="cbI-Sa-vCl" id="UEz-nC-8r6"/>
-                <outlet property="viewContent" destination="vPT-Ap-wRf" id="WMi-B1-0w7"/>
+                <outlet property="titleLabel" destination="cbI-Sa-vCl" id="02P-Ly-zmo"/>
             </connections>
             <point key="canvasLocation" x="244.92753623188409" y="150.66964285714286"/>
         </collectionViewCell>

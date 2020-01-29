@@ -22,7 +22,7 @@
 }
 
 - (void)bindData:(NSString *)text {
-    _label.text = text;
+    self.titleLabel.text = text;
 }
 
 - (void)setContentSize:(CGSize *)size {
