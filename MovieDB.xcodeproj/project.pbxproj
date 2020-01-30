@@ -21,6 +21,8 @@
 		110D5E7123DFF1EB00C251BC /* Demo5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 110D5E7023DFF1EB00C251BC /* Demo5ViewController.m */; };
 		110D5E7723E00A7600C251BC /* Demo5CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 110D5E7523E00A7600C251BC /* Demo5CollectionViewCell.m */; };
 		110D5E7823E00A7600C251BC /* Demo5CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110D5E7623E00A7600C251BC /* Demo5CollectionViewCell.xib */; };
+		1110828C23E272E8007D7FC6 /* Demo5ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110828B23E272E8007D7FC6 /* Demo5ScrollViewController.m */; };
+		1110829C23E29E35007D7FC6 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110829B23E29E35007D7FC6 /* UIView+Extension.m */; };
 		118AFBF523DE89AE00F0BFC9 /* MovieDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 118AFBF323DE89AE00F0BFC9 /* MovieDetailViewController.m */; };
 		118AFBF623DE89AE00F0BFC9 /* MovieDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 118AFBF423DE89AE00F0BFC9 /* MovieDetailViewController.xib */; };
 		11D689D323D932E900699F74 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D689D223D932E900699F74 /* AppDelegate.m */; };
@@ -78,6 +80,10 @@
 		110D5E7423E00A7600C251BC /* Demo5CollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo5CollectionViewCell.h; sourceTree = "<group>"; };
 		110D5E7523E00A7600C251BC /* Demo5CollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo5CollectionViewCell.m; sourceTree = "<group>"; };
 		110D5E7623E00A7600C251BC /* Demo5CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Demo5CollectionViewCell.xib; sourceTree = "<group>"; };
+		1110828A23E272E8007D7FC6 /* Demo5ScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo5ScrollViewController.h; sourceTree = "<group>"; };
+		1110828B23E272E8007D7FC6 /* Demo5ScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo5ScrollViewController.m; sourceTree = "<group>"; };
+		1110829A23E29E35007D7FC6 /* UIView+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		1110829B23E29E35007D7FC6 /* UIView+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		118AFBF223DE89AE00F0BFC9 /* MovieDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieDetailViewController.h; sourceTree = "<group>"; };
 		118AFBF323DE89AE00F0BFC9 /* MovieDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieDetailViewController.m; sourceTree = "<group>"; };
 		118AFBF423DE89AE00F0BFC9 /* MovieDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieDetailViewController.xib; sourceTree = "<group>"; };
@@ -222,6 +228,24 @@
 			path = cell;
 			sourceTree = "<group>";
 		};
+		1110828923E272D0007D7FC6 /* demo5Scroll */ = {
+			isa = PBXGroup;
+			children = (
+				1110828A23E272E8007D7FC6 /* Demo5ScrollViewController.h */,
+				1110828B23E272E8007D7FC6 /* Demo5ScrollViewController.m */,
+			);
+			path = demo5Scroll;
+			sourceTree = "<group>";
+		};
+		1110828D23E2993C007D7FC6 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				1110829A23E29E35007D7FC6 /* UIView+Extension.h */,
+				1110829B23E29E35007D7FC6 /* UIView+Extension.m */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
 		118AFBF123DE899700F0BFC9 /* movieDetail */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,6 +281,7 @@
 		11D689D023D932E900699F74 /* MovieDB */ = {
 			isa = PBXGroup;
 			children = (
+				1110828D23E2993C007D7FC6 /* extension */,
 				1108D15223E1541700A5B945 /* utils */,
 				11FC1C5123DE67CA0026FC9B /* model */,
 				11FC1C5423DE67CA0026FC9B /* ui */,
@@ -300,6 +325,7 @@
 		11FC1C5423DE67CA0026FC9B /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				1110828923E272D0007D7FC6 /* demo5Scroll */,
 				1108D16023E160F900A5B945 /* demo4Scroll */,
 				1108D14623E12A5800A5B945 /* demo4 */,
 				110D5E6E23DFF1D200C251BC /* demo5 */,
@@ -613,6 +639,7 @@
 				110D5E7123DFF1EB00C251BC /* Demo5ViewController.m in Sources */,
 				118AFBF523DE89AE00F0BFC9 /* MovieDetailViewController.m in Sources */,
 				110D5E6723DFB9CD00C251BC /* FavoriteViewController.m in Sources */,
+				1110829C23E29E35007D7FC6 /* UIView+Extension.m in Sources */,
 				11FC1C6623DE67CA0026FC9B /* MovieCollectionViewCell.m in Sources */,
 				110D5E6C23DFBDF000C251BC /* MovieTableViewCell.m in Sources */,
 				11D689E123D932EB00699F74 /* main.m in Sources */,
@@ -622,6 +649,7 @@
 				1108D15523E1543800A5B945 /* ViewUtils.m in Sources */,
 				11FC1C6723DE67CA0026FC9B /* MainController.m in Sources */,
 				11FC1C7723DE69D50026FC9B /* HomeViewController.m in Sources */,
+				1110828C23E272E8007D7FC6 /* Demo5ScrollViewController.m in Sources */,
 				1108D15023E14E8400A5B945 /* Demo4TableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

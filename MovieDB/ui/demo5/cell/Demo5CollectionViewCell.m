@@ -13,12 +13,6 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
-    
-    CGFloat borderWidth = 0.5f;
-    
-    self.frame = CGRectInset(self.frame, -borderWidth, -borderWidth);
-    self.layer.borderColor = [UIColor blackColor].CGColor;
-    self.layer.borderWidth = borderWidth;
 }
 
 - (void)bindData:(NSString *)text {

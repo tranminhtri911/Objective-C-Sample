@@ -59,11 +59,9 @@ static NSString * const reuseIdentifier = @"MovieCollectionViewCell";
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     CGFloat width = (collectionView.frame.size.width - 40)  / 3;
-    CGFloat navHeight = self.navigationController.navigationBar.frame.size.height;
-    CGFloat height = (collectionView.frame.size.height - 40 - navHeight)  / 3;
+    CGFloat height = (self.view.safeAreaLayoutGuide.layoutFrame.size.height - 40) / 3;
     return CGSizeMake(width, height);
 }
-
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
@@ -73,7 +71,7 @@ static NSString * const reuseIdentifier = @"MovieCollectionViewCell";
         return;
     }
     
-    MovieDetailViewController *detailScreen = [MovieDetailViewController create:movie];
+    MovieDetailViewController *detailScreen = [[MovieDetailViewController alloc] initWidthMovie:movie];
   
     [self.navigationController pushViewController:detailScreen animated:true];
 }
