@@ -16,6 +16,14 @@
 
 @implementation MovieDetailViewController
 
+- (instancetype)initWidthMovie:(Movie *)movie {
+    self = [super init];
+    if (!self) return nil;
+    
+    _movie = movie;
+    return self;
+}
+
 +(MovieDetailViewController* )create:(Movie *) movie {
     MovieDetailViewController *vc = [[MovieDetailViewController alloc]initWithNibName:@"MovieDetailViewController" bundle:nil];
     vc.movie = movie;

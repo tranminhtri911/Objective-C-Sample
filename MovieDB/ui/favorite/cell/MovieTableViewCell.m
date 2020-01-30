@@ -32,8 +32,6 @@
     _labelRating.text = movie.voteAverage;
     _labelDate.text = movie.releaseDate;
     
-    _image.layer.cornerRadius = 4;
-    _image.clipsToBounds = YES;
     NSURL *url = [NSURL URLWithString:movie.posterPath];
     [_image sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"1"]];
 }

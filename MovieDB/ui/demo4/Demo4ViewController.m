@@ -45,6 +45,12 @@ static NSString * const reuseIdentifier = @"Demo4TableViewCell";
     [ViewUtils setStroke:self.firstButton];
     [ViewUtils setStroke:self.secondButton];
     
+    
+    CAGradientLayer *gradient = [CAGradientLayer layer];
+    gradient.frame = self.firstLabel.bounds;
+    gradient.colors = [NSArray arrayWithObjects:(id)[[UIColor colorWithRed:34.0/255.0 green:211/255.0 blue:198/255.0 alpha:1.0] CGColor],(id)[[UIColor colorWithRed:145/255.0 green:72.0/255.0 blue:203/255.0 alpha:1.0] CGColor], nil];
+    [self.firstLabel.layer addSublayer:gradient];
+    
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.estimatedRowHeight = 60;

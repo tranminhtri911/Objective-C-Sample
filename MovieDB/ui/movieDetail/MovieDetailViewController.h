@@ -27,6 +27,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 +(MovieDetailViewController *)create:(Movie *)movie;
 
+- (instancetype)initWidthMovie:(Movie *)movie;
+
 @end
 
 NS_ASSUME_NONNULL_END

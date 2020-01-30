@@ -15,6 +15,12 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    
+    self.layer.shadowColor   = [UIColor grayColor].CGColor;
+    self.layer.shadowOffset  = CGSizeMake(2, 2);
+    self.layer.shadowOpacity = 0.5f;
+    self.layer.shadowRadius = 5.0;
+    self.layer.masksToBounds = NO;
 }
 
 - (void)bindData:(Movie *)movie {
@@ -24,13 +30,8 @@
     
     _labelTitle.text = movie.title;
     
-    _imageVIew.layer.cornerRadius = 4;
-    _imageVIew.clipsToBounds = YES;
-    
     NSURL *url = [NSURL URLWithString:movie.posterPath];
     [_imageVIew sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"1"]];
 }
-
-
 
 @end
