@@ -8,7 +8,6 @@
 
 #import "MovieCollectionViewCell.h"
 #import "Movie.h"
-#import <SDWebImage/SDWebImage.h>
 
 @implementation MovieCollectionViewCell
 

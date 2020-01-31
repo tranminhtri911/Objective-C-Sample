@@ -25,6 +25,58 @@
             </objects>
             <point key="canvasLocation" x="26" y="26"/>
         </scene>
+        <!--WkWebVIew-->
+        <scene sceneID="7J1-SV-c01">
+            <objects>
+                <navigationController id="7xH-0e-Eoz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="WkWebVIew" image="home" id="MSn-An-bEW"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Gjb-7a-kL7">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Rhx-vc-Qkk" kind="relationship" relationship="rootViewController" id="tk8-zL-Evk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rRp-gQ-Wes" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24" y="-861"/>
+        </scene>
+        <!--WKWebView-->
+        <scene sceneID="LCG-fP-MsB">
+            <objects>
+                <viewController id="Rhx-vc-Qkk" customClass="WKWebViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ogc-V3-NEm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5UF-K4-xZp">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5UF-K4-xZp" firstAttribute="leading" secondItem="L4N-M4-s5Q" secondAttribute="leading" id="FPL-lE-phh"/>
+                            <constraint firstItem="L4N-M4-s5Q" firstAttribute="trailing" secondItem="5UF-K4-xZp" secondAttribute="trailing" id="RmX-OE-cD0"/>
+                            <constraint firstItem="5UF-K4-xZp" firstAttribute="top" secondItem="L4N-M4-s5Q" secondAttribute="top" id="c0K-rA-GXu"/>
+                            <constraint firstItem="L4N-M4-s5Q" firstAttribute="bottom" secondItem="5UF-K4-xZp" secondAttribute="bottom" id="ilQ-gN-gx9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="L4N-M4-s5Q"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="WKWebView" id="Nlh-w6-ehD"/>
+                    <connections>
+                        <outlet property="wkWebView" destination="5UF-K4-xZp" id="Sjx-1w-1Wc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zp5-ih-nZI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="930" y="-866.19718309859161"/>
+        </scene>
         <!--Home-->
         <scene sceneID="gjF-nM-7Jk">
             <objects>
@@ -425,6 +477,7 @@
                         <segue destination="Dlt-6m-X7h" kind="relationship" relationship="viewControllers" id="MB2-6G-0j1"/>
                         <segue destination="e49-OE-nhs" kind="relationship" relationship="viewControllers" id="iJA-L7-XwT"/>
                         <segue destination="Vcs-io-eJd" kind="relationship" relationship="viewControllers" id="03B-yr-4uF"/>
+                        <segue destination="7xH-0e-Eoz" kind="relationship" relationship="viewControllers" id="dmc-XU-I98"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nHO-5U-3fF" userLabel="First Responder" sceneMemberID="firstResponder"/>
